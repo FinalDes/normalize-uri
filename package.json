@@ -1,7 +1,7 @@
 {
   "name": "uri-builder",
-  "version": "1.0.1",
-  "main": "index.js",
+  "version": "1.0.3",
+  "main": "./dist/index.js",
   "repository": "git@github.com:FinalDes/normalize-uri.git",
   "author": "Alex Alonso <alex4551@gmail.com>",
   "license": "MIT",
