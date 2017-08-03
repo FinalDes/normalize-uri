@@ -7,12 +7,28 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn tsc",
-    "tsc": "tsc -p tsconfig.json",
     "lint:ts": "yarn tslint",
+    "test": "jest",
+    "tsc": "tsc -p tsconfig.json",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "devDependencies": {
+    "@types/jest": "^20.0.5",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.7",
+    "ts-node": "^3.3.0",
     "tslint": "^5.5.0",
     "typescript": "^2.4.2"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(tests/.*|\\.(test|spec))\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
   }
 }
