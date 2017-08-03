@@ -5,6 +5,7 @@
   "repository": "git@github.com:FinalDes/normalize-uri.git",
   "author": "Alex Alonso <alex4551@gmail.com>",
   "license": "MIT",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "yarn tsc",
     "lint:ts": "yarn tslint",
