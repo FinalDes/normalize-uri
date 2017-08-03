@@ -1,12 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-function normalizeMongoURI(_a) {
-    var host = _a.host, _b = _a.port, port = _b === void 0 ? 27017 : _b, _c = _a.db, db = _c === void 0 ? "test" : _c, user = _a.user, pass = _a.pass;
-    var result = "mongodb://";
+function normalizeMongoURI({ host, port, db = "test", user, pass }) {
+    let result = "mongodb://";
     if (user && pass) {
-        result += user + ":" + pass + "@";
+        result += `${user}:${pass}@`;
     }
-    return result += host + ":" + (normalizePort(port) || 27017) + "/" + db;
+    result += `${host}`;
+    if (port && normalizePort(port)) {
+        result += `:${normalizePort(port)}`;
+    }
+    return result += `/${db}`;
 }
 exports.normalizeMongoURI = normalizeMongoURI;
 function normalizePort(port) {

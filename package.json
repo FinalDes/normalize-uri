@@ -9,6 +9,8 @@
     "build": "yarn tsc",
     "lint:ts": "yarn tslint",
     "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:showCoverage": "yarn test:coverage && open coverage/lcov-report/index.html",
     "tsc": "tsc -p tsconfig.json",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'"
   },

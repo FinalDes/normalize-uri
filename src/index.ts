@@ -1,4 +1,4 @@
-export function normalizeMongoURI({host, port = 27017, db= "test", user, pass}: {
+export function normalizeMongoURI({host, port, db= "test", user, pass}: {
     host: string,
     port?: number|string ,
     db?: string ,
@@ -9,7 +9,11 @@ export function normalizeMongoURI({host, port = 27017, db= "test", user, pass}: 
     if (user && pass) {
         result += `${user}:${pass}@`;
     }
-    return result += `${host}:${normalizePort(port) || 27017 }/${db}`;
+    result += `${host}`;
+    if (port && normalizePort(port)) {
+        result += `:${normalizePort(port)}`;
+    }
+    return result += `/${db}`;
 }
 
 export function normalizePort(port: number|string): number|boolean {
