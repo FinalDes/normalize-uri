@@ -5,6 +5,12 @@
   "repository": "git@github.com:FinalDes/normalize-uri.git",
   "author": "Alex Alonso <alex4551@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc",
+    "tsc": "tsc -p tsconfig.json",
+    "lint:ts": "yarn tslint",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'"
+  },
   "devDependencies": {
     "tslint": "^5.5.0",
     "typescript": "^2.4.2"
