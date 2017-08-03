@@ -1,5 +1,5 @@
-// import {normalizePort} from "./../index";
-import {normalizePort} from "./../../dist/index.js";
+import {normalizePort} from "./../index";
+// import {normalizePort} from "./../../dist/index.js";
 
 describe("test valid port", () => {
     test("3000 return 3000", () => {

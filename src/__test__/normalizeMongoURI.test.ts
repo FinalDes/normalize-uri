@@ -1,6 +1,6 @@
 /* tslint:disable object-literal-sort-keys*/
-// import {normalizeMongoURI} from "./../index";
-import {normalizeMongoURI} from "./../../dist/index.js";
+import {normalizeMongoURI} from "./../index";
+// import {normalizeMongoURI} from "./../../dist/index.js";
 
 describe("build valid mongouri", () => {
     test("only host address", () => {
