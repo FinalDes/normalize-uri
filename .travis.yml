@@ -6,7 +6,7 @@ node_js:
 script:
   - yarn
   - yarn tslint
-  - yarn test
+  - yarn test:coveralls
 cache:
   yarn: true
   directories:

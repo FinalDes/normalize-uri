@@ -12,11 +12,13 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:showCoverage": "yarn test:coverage && open coverage/lcov-report/index.html",
+    "test:coveralls": "yarn test:coverage && cat ./coverage/lcov.info | coveralls",
     "tsc": "tsc -p tsconfig.json",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "devDependencies": {
     "@types/jest": "^20.0.5",
+    "coveralls": "^2.13.1",
     "jest": "^20.0.4",
     "ts-jest": "^20.0.7",
     "ts-node": "^3.3.0",
