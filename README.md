@@ -1,1 +1,3 @@
 # uri-builder [![Build Status](https://travis-ci.org/FinalDes/uri-builder.svg?branch=master)](https://travis-ci.org/FinalDes/uri-builder) [![Coverage Status](https://coveralls.io/repos/github/FinalDes/uri-builder/badge.svg?branch=master)](https://coveralls.io/github/FinalDes/uri-builder?branch=master)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/FinalDes/uri-builder.svg)](https://greenkeeper.io/)
