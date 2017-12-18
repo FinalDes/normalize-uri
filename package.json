@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/jest": "^21.1.0",
     "coveralls": "^3.0.0",
-    "jest": "^21.0.0",
+    "jest": "^22.0.0",
     "ts-jest": "^21.0.0",
     "ts-node": "^3.3.0",
     "tslint": "^5.5.0",
