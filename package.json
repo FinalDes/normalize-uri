@@ -17,7 +17,7 @@
     "tslint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "devDependencies": {
-    "@types/jest": "^21.1.0",
+    "@types/jest": "^22.0.0",
     "coveralls": "^3.0.0",
     "jest": "^22.0.3",
     "ts-jest": "^22.0.0",
